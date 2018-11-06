@@ -1,0 +1,11 @@
+node_modules/
+.vscode/
+.idea/
+.DS_Store
+.travis.yml
+jest.config.js
+.git
+.gitignore
+.eslintignore
+.eslintrc.json
+coverage/
