@@ -13,7 +13,7 @@
     "build": "npm run type && webpack",
     "type": "tsc --emitDeclarationOnly",
     "lint": "eslint 'src/**/*.ts'",
-    "version": "git push --follow-tags",
+    "postversion": "git push --follow-tags",
     "codecov": "codecov"
   },
   "pre-push": "prepush",
