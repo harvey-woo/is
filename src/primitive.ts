@@ -1,3 +1,4 @@
+/** @ignore */
 const primitives: { [type: string]: true } = {
   string: true,
   boolean: true,
@@ -5,14 +6,26 @@ const primitives: { [type: string]: true } = {
   undefined: true,
   symbol: true
 }
-
-export function primitiveType(obj: any) {
-  if (obj === null) return 'null'
-  if (primitives[typeof obj]) {
-    return typeof obj
+/** @ignore */
+export function primitiveType(target: any) {
+  if (target === null) return 'null'
+  if (primitives[typeof target]) {
+    return typeof target
   }
 }
 
-export default function isPrimitive(obj: any): Boolean {
-  return !!primitiveType(obj)
+/**
+ * detemine if target is primitive type, such as ```1```, ```"foobar"```
+ * @param target 
+ * 
+ * ```javascript
+ * 
+ * isPrimitive(1) // => true
+ * isPrimitive(null) // => true
+ * isPrimitive({}) // => false
+ * 
+ * ```
+ */
+export default function isPrimitive(target: any): Boolean {
+  return !!primitiveType(target)
 }

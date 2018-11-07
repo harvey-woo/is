@@ -5,9 +5,9 @@ import { isArrayLike } from './array'
  * 
  * ```javascript
  * isEqual(1, 1) // => true
- * isEqual(1, new Number(1)) // true
- * isEqual({a: 1}, {a: 1}) // true
- * isEqual(1, '1') // false
+ * isEqual(1, new Number(1)) // => true
+ * isEqual({a: 1}, {a: 1}) // => true
+ * isEqual(1, '1') // => false
  * ```
  * 
  * @param target 

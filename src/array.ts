@@ -39,12 +39,13 @@ export function isTypedArray(target: any): boolean {
   return is(target, rTyped)
 }
 /**
- * determine if the target is an array like object
+ * determine if the target is an array like object.
  * this function is alias of isArray(target, true)
  * 
  * ```javascript
  * isArrayLike([]) // => true
  * isArrayLike({ 0:1, length: 1 }) // => true
+ * ```
  * 
  * @param target 
  */
