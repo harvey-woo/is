@@ -21,7 +21,8 @@ deploy:
     skip_cleanup: true
     on:
       tags: true
-  - provider: pages
+  - 
+    provider: pages
     local-dir: docs
     skip-cleanup: true
     github-token: $GITHUB_TOKEN

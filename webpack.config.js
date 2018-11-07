@@ -1,5 +1,4 @@
 const resolve = require('path').resolve
-const TypedocWebpackPlugin = require('typedoc-webpack-plugin')
 
 module.exports = {
   mode: 'production',
@@ -19,12 +18,5 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: resolve('dist')
-  },
-  plugins: [
-    new TypedocWebpackPlugin({
-      mode: 'modules',
-      exclude: '**/__test__/**/*.*',
-      out: resolve('docs')
-    }, './src')
-  ]
+  }
 }
