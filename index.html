@@ -38,8 +38,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-externals" checked />
-							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 							<input type="checkbox" id="tsd-filter-only-exported" />
 							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
@@ -65,11 +63,33 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<h1 id="is">is</h1>
-				<p>a micro type check lib</p>
+				<p>a micro type check lib, provides some common types of detection methods</p>
+				<p><a href="https://harvey-woo.github.io/is/">documentation</a></p>
 				<p><a href="https://www.npmjs.com/package/@cat5th/is"><img src="https://img.shields.io/npm/v/@cat5th/is.svg?style=flat-square" alt="npm version"></a>
 					<a href="https://codecov.io/gh/harvey-woo/is"><img src="https://img.shields.io/codecov/c/github/harvey-woo/is.svg?style=flat-square" alt="coverage"></a>
 					<a href="https://www.npmjs.com/package/@cat5th/is"><img src="https://img.shields.io/npm/dt/@cat5th/is.svg?style=flat-square" alt="npm downloads"></a>
 				<a href="https://travis-ci.org/harvey-woo/is"><img src="https://img.shields.io/travis/harvey-woo/is.svg?style=flat-square" alt="Build Status"></a></p>
+				<p>[TOC]</p>
+				<h2 id="-how-to-use">How to Use</h2>
+				<h3 id="installation">Installation</h3>
+				<pre><code class="language-PowerShell">npm i @cat5th/is</code></pre>
+				<h3 id="import-the-function-you-need">Import the function you need</h3>
+				<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { type, isPlainObject } <span class="hljs-keyword">from</span> <span class="hljs-string">'@cat5th/is'</span></code></pre>
+				<h3 id="-enjoy-it">enjoy it</h3>
+				<pre><code class="language-javascript"><span class="hljs-keyword">import</span> {type, isPlainObject, isEqual } <span class="hljs-keyword">from</span> <span class="hljs-string">'@cat5th/is'</span>
+type(<span class="hljs-number">1</span>) <span class="hljs-comment">// =&gt; 'number'</span>
+isPlainObject({}) <span class="hljs-comment">// =&gt; true</span>
+isEqual({<span class="hljs-attr">a</span>: <span class="hljs-number">1</span>}, {<span class="hljs-attr">a</span>: <span class="hljs-number">1</span>}) <span class="hljs-comment">// =&gt; true</span></code></pre>
+				<h3 id="-cat5th-is-provides-variable-function-such-as"><strong>@cat5th/is</strong> provides variable function such as</h3>
+				<ul>
+					<li>is</li>
+					<li>isArrayLike</li>
+					<li>isEqual</li>
+					<li>isPlainObject</li>
+					<li>isPrimitive</li>
+					<li>...</li>
+				</ul>
+				<p>You can check it out from the <a href="https://harvey-woo.github.io/is/">documentation</a></p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -78,46 +98,73 @@
 					<li class="globals  ">
 						<a href="globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/___tests___index_.html">"__tests__/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_array_.html">"array"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_empty_.html">"empty"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_eq_.html">"eq"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_index_.html">"index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_is_.html">"is"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_iterator_.html">"iterator"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_number_.html">"number"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_object_.html">"object"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_primitive_.html">"primitive"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_promise_.html">"promise"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_type_.html">"type"</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-type-alias tsd-is-not-exported">
+						<a href="globals.html#typecondition" class="tsd-kind-icon">Type<wbr>Condition</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#is" class="tsd-kind-icon">is</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isarray" class="tsd-kind-icon">is<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isarraylike" class="tsd-kind-icon">is<wbr>Array<wbr>Like</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isdec" class="tsd-kind-icon">is<wbr>Dec</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isequal" class="tsd-kind-icon">is<wbr>Equal</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isglobal" class="tsd-kind-icon">is<wbr>Global</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isgt" class="tsd-kind-icon">is<wbr>Gt</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isint" class="tsd-kind-icon">is<wbr>Int</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isiterable" class="tsd-kind-icon">is<wbr>Iterable</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#islt" class="tsd-kind-icon">is<wbr>Lt</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isnegative" class="tsd-kind-icon">is<wbr>Negative</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isobjectlike" class="tsd-kind-icon">is<wbr>Object<wbr>Like</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isplainobject" class="tsd-kind-icon">is<wbr>Plain<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#ispositive" class="tsd-kind-icon">is<wbr>Positive</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isprimitive" class="tsd-kind-icon">is<wbr>Primitive</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isthenable" class="tsd-kind-icon">is<wbr>Thenable</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#istypedarray" class="tsd-kind-icon">is<wbr>Typed<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isvalidnumber" class="tsd-kind-icon">is<wbr>Valid<wbr>Number</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#type" class="tsd-kind-icon">type</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
