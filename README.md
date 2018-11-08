@@ -8,7 +8,7 @@ a micro type check lib, provides some common types of detection methods
 [![npm downloads](https://img.shields.io/npm/dt/@cat5th/is.svg?style=flat-square)](https://www.npmjs.com/package/@cat5th/is)
 [![Build Status](https://img.shields.io/travis/harvey-woo/is.svg?style=flat-square)](https://travis-ci.org/harvey-woo/is)
 
-## How to Use
+## How to Use
 
 
 ### Installation
@@ -20,7 +20,7 @@ npm i @cat5th/is
 ```javascript
 import { type, isPlainObject } from '@cat5th/is'
 ```
-### Enjoy it
+### Enjoy it
 ```javascript
 import {type, isPlainObject, isEqual } from '@cat5th/is' 
 type(1) // => 'number'
@@ -35,7 +35,7 @@ isEqual({a: 1}, {a: 1}) // => true
 - isPlainObject
 - isPrimitive
 - ...
-- you can post issus if you and any good idea of feature
+- you can post issus if you have any good idea of feature
 
 You can check it out from the [documentation](https://harvey-woo.github.io/is/index.html)
 
