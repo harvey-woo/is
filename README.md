@@ -28,7 +28,7 @@ isPlainObject({}) // => true
 isEqual({a: 1}, {a: 1}) // => true
 ```
 
-### **@cat5th/is** provides variable function such as
+### **@cat5th/is** provides various functions such as
 - is
 - isArrayLike
 - isEqual
