@@ -21,6 +21,6 @@
  * 
  * @param target 
  */
-export default function isIterable(target: any) {
+export default function isIterable(target: any): target is Iterable<any> {
   return typeof target === 'object' && typeof target[Symbol.iterator] === 'function'
 }

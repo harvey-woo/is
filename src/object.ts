@@ -1,3 +1,4 @@
+import { ObjectLike, PlainObject } from './types'
 /**
  * detemine if target is a plain object
  * 
@@ -7,7 +8,7 @@
  * ```
  * @param target 
  */
-export function isPlainObject(target: any): boolean {
+export function isPlainObject(target: any): target is PlainObject  {
   if (!target) return false
   return Object.getPrototypeOf(target) === Object.prototype || Object === target.constructor
 }
@@ -29,7 +30,7 @@ export function isPlainObject(target: any): boolean {
  * 
  * @param target 
  */
-export function isObjectLike(target: any): boolean {
+export function isObjectLike(target: any): target is ObjectLike {
   return typeof target === 'object' || typeof target === 'function'
 }
 
@@ -38,5 +39,21 @@ export function isObjectLike(target: any): boolean {
  * @param target 
  */
 export function isGlobal(target: any): boolean {
-  return target && typeof target === 'object' && typeof target.setTimeout === 'function'
+  return typeof target === 'object' && typeof target.setTimeout === 'function'
 }
+
+/**
+ * detemine if target can be cloned, for example: jQuery Object
+ * @param target 
+ */
+export function isCloneble(target:any): boolean {
+  return typeof target === 'object' && typeof target.clone === 'function'
+}
+
+// /**
+//  * 
+//  * @param element 
+//  */
+// function isNode(target){
+//   return (typeof Node === 'function') && target instanceof Node
+// }

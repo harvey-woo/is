@@ -1,3 +1,4 @@
+import { Primitive } from './types'
 /** @ignore */
 const primitives: { [type: string]: true } = {
   string: true,
@@ -26,6 +27,6 @@ export function primitiveType(target: any) {
  * 
  * ```
  */
-export default function isPrimitive(target: any): Boolean {
+export default function isPrimitive(target: any): target is Primitive {
   return !!primitiveType(target)
 }

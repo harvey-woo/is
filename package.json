@@ -9,7 +9,8 @@
     "doc": "typedoc --options typedoc.js",
     "lint-test": "npm run lint && npm run test",
     "prepush": "npm run lint-test",
-    "test": "jest",
+    "test": "mocha -r ts-node/register src/__tests__/**/*.ts",
+    "test:browser": "mocha",
     "build:babel": "babel src --out-dir dist --extensions '.ts,.tsx,.js,.jsx' && uglifyjs-folder dist -e -o dist -x .js",
     "clear": "rm -rf dist",
     "build": "npm run clear && npm run type && npm run build:babel",
@@ -39,17 +40,22 @@
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-typescript": "^7.1.0",
+    "@types/chai": "^4.1.7",
     "@types/jest": "^23.3.9",
+    "@types/mocha": "^5.2.5",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
+    "chai": "^4.2.0",
     "codecov": "^3.1.0",
     "eslint": "^5.8.0",
     "eslint-plugin-typescript": "^0.13.0",
-    "jest": "^23.6.0",
+    "mocha": "^5.2.0",
+    "mocha-puppeteer": "^0.13.0",
     "pre-push": "^0.1.1",
-    "ts-jest": "^23.10.4",
+    "ts-node": "^7.0.1",
     "typedoc": "^0.13.0",
     "typedoc-plugin-ensure-internal": "git+https://github.com/deap82/typedoc-plugin-ensure-internal.git",
     "typedoc-plugin-external-module-name": "^1.1.3",
@@ -60,5 +66,8 @@
     "uglifyjs-folder": "^1.5.1",
     "webpack": "^4.23.1",
     "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.1.5"
   }
 }

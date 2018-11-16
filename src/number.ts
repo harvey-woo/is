@@ -9,7 +9,7 @@ import is from './is'
  * ```
  * @param target 
  */
-export default function isValidNumber(target: any): boolean {
+export default function isValidNumber(target: any): target is number | Number {
   return is(target, 'number') && !isNaN(target)
 }
 /**
@@ -29,7 +29,7 @@ export default function isValidNumber(target: any): boolean {
  * @param target 
  */
 export function isNegative(target: any): boolean {
-  return isValidNumber(target) && 1 / target < 0
+  return isValidNumber(target) && 1 / +target < 0
 }
 /**
  * detemine if target is a positive number.
@@ -47,7 +47,7 @@ export function isNegative(target: any): boolean {
  * @param target 
  */
 export function isPositive(target: any): boolean {
-  return isValidNumber(target) && 1 / target > 0
+  return isValidNumber(target) && 1 / +target > 0
 }
 /**
  * detemine if target is a decimal.
@@ -60,7 +60,7 @@ export function isPositive(target: any): boolean {
  * @param target 
  */
 export function isDec(target: any): boolean {
-  return isValidNumber(target) && target % 1 !== 0
+  return isValidNumber(target) && +target % 1 !== 0
 }
 /**
  * detemine if target is a integer.
@@ -73,7 +73,7 @@ export function isDec(target: any): boolean {
  * @param target 
  */
 export function isInt(target: any): boolean {
-  return isValidNumber(target) && target % 1 === 0
+  return isValidNumber(target) && +target % 1 === 0
 }
 
 /**

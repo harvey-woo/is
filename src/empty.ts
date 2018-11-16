@@ -2,6 +2,7 @@ import { isArrayLike } from './array'
 import is from './is'
 import { isPlainObject } from './object'
 import isPrimitive from './primitive'
+import { Empty } from './types'
 /**
  * @ignore
  */
@@ -24,7 +25,7 @@ const arrMapSet = [Map, Set]
  * 
  * @param target 
  */
-function isEmpty(target: any): boolean {
+function isEmpty(target: any): target is Empty {
   if (isArrayLike(target)) {
     return !target.length
   }

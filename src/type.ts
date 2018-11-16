@@ -29,8 +29,13 @@ const emptyObj = {}
 function type(obj: any, boxedOnly = false): string {
   const sPrimitiveType = primitiveType(obj)
   if (sPrimitiveType && !boxedOnly) return sPrimitiveType
-  if (!sPrimitiveType && obj.constructor && obj.constructor.name) {
-    return obj.constructor.name
+  if (!sPrimitiveType && obj.constructor != undefined) {
+    if (typeof obj.constructor === 'function' && obj.constructor.name) {
+      return obj.constructor.name
+    }
+    if (typeof obj.constructor === 'object' && typeof obj.constructor.toString === 'function') {
+      return obj.constructor.toString().slice(8, -1)
+    }
   }
   return emptyObj.toString.call(obj).slice(8, -1)
 }

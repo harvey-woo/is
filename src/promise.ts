@@ -18,6 +18,6 @@
  * }
  * ```
  */
-export function isThenable(target: any): boolean {
+export function isThenable(target: any): target is PromiseLike<any> {
   return typeof target === 'object' && typeof target.then === 'function'
 }
