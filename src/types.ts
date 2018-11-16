@@ -6,7 +6,7 @@ export type EmptyArrayLike = {
   readonly length: 0
 }
 export type PlainObject = { [name: string]: any }
-export type EmptyPlainObject = {
-    constructor?: Function
-}
-export type Empty = FalseyPrimitive | EmptyArrayLike | EmptyPlainObject | [] | { valueOf: () => Empty }
+type EmptyPlainObject = { [index: string]: never } 
+
+// TODO: Well, I have no idea how to check a map or a set if is empty, any one would help me, and valueOf object, too
+export type Empty = Map<any, any> | Set<any> | FalseyPrimitive | EmptyArrayLike | EmptyPlainObject | [] | { valueOf: () => Empty }

@@ -10,7 +10,6 @@
     "lint-test": "npm run lint && npm run test",
     "prepush": "npm run lint-test",
     "test": "mocha -r ts-node/register src/__tests__/**/*.ts",
-    "test:browser": "mocha",
     "build:babel": "babel src --out-dir dist --extensions '.ts,.tsx,.js,.jsx' && uglifyjs-folder dist -e -o dist -x .js",
     "clear": "rm -rf dist",
     "build": "npm run clear && npm run type && npm run build:babel",

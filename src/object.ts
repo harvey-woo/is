@@ -49,11 +49,3 @@ export function isGlobal(target: any): boolean {
 export function isCloneble(target:any): boolean {
   return typeof target === 'object' && typeof target.clone === 'function'
 }
-
-// /**
-//  * 
-//  * @param element 
-//  */
-// function isNode(target){
-//   return (typeof Node === 'function') && target instanceof Node
-// }
