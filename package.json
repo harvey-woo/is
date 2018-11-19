@@ -9,14 +9,15 @@
     "doc": "typedoc --options typedoc.js",
     "lint-test": "npm run lint && npm run test",
     "prepush": "npm run lint-test",
-    "test": "mocha -r ts-node/register src/__tests__/**/*.ts",
+    "test": "cross-env NODE_ENV=test nyc mocha -r ts-node/register src/__tests__/**/*.ts",
+    "cov": "nyc report",
     "build:babel": "babel src --out-dir dist --extensions '.ts,.tsx,.js,.jsx' && uglifyjs-folder dist -e -o dist -x .js",
     "clear": "rm -rf dist",
     "build": "npm run clear && npm run type && npm run build:babel",
     "type": "tsc --emitDeclarationOnly --removeComments false",
     "lint": "eslint 'src/**/*.ts'",
     "postversion": "git push --follow-tags",
-    "codecov": "codecov"
+    "codecov": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "pre-push": "prepush",
   "repository": {
@@ -34,6 +35,25 @@
     "url": "https://github.com/harvey-woo/is/issues"
   },
   "homepage": "https://github.com/harvey-woo/is#readme",
+  "nyc": {
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx"
+    ],
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "sourceMap": true,
+    "instrument": true
+  },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
@@ -42,17 +62,18 @@
     "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-typescript": "^7.1.0",
-    "@types/chai": "^4.1.7",
-    "@types/jest": "^23.3.9",
-    "@types/mocha": "^5.2.5",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
+    "babel-plugin-istanbul": "^5.1.0",
     "chai": "^4.2.0",
     "codecov": "^3.1.0",
+    "cross-env": "^5.2.0",
     "eslint": "^5.8.0",
     "eslint-plugin-typescript": "^0.13.0",
+    "istanbul": "^0.4.5",
     "mocha": "^5.2.0",
     "mocha-puppeteer": "^0.13.0",
+    "nyc": "^13.1.0",
     "pre-push": "^0.1.1",
     "ts-node": "^7.0.1",
     "typedoc": "^0.13.0",
