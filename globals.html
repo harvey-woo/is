@@ -65,10 +65,18 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias"><a href="globals.html#empty" class="tsd-kind-icon">Empty</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#emptyarraylike" class="tsd-kind-icon">Empty<wbr>Array<wbr>Like</a></li>
+								<li class="tsd-kind-type-alias tsd-is-not-exported"><a href="globals.html#emptyplainobject" class="tsd-kind-icon">Empty<wbr>Plain<wbr>Object</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#falseyprimitive" class="tsd-kind-icon">Falsey<wbr>Primitive</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#objectlike" class="tsd-kind-icon">Object<wbr>Like</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#plainobject" class="tsd-kind-icon">Plain<wbr>Object</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#primitive" class="tsd-kind-icon">Primitive</a></li>
 								<li class="tsd-kind-type-alias tsd-is-not-exported"><a href="globals.html#typecondition" class="tsd-kind-icon">Type<wbr>Condition</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#typedarray" class="tsd-kind-icon">Typed<wbr>Array</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -77,6 +85,7 @@
 								<li class="tsd-kind-function"><a href="globals.html#is" class="tsd-kind-icon">is</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#isarray" class="tsd-kind-icon">is<wbr>Array</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#isarraylike" class="tsd-kind-icon">is<wbr>Array<wbr>Like</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#iscloneble" class="tsd-kind-icon">is<wbr>Cloneble</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#isdec" class="tsd-kind-icon">is<wbr>Dec</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#isequal" class="tsd-kind-icon">is<wbr>Equal</a></li>
@@ -99,15 +108,109 @@
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="empty" class="tsd-anchor"></a>
+					<h3>Empty</h3>
+					<div class="tsd-signature tsd-kind-icon">Empty<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="globals.html#falseyprimitive" class="tsd-signature-type">FalseyPrimitive</a><span class="tsd-signature-symbol"> | </span><a href="globals.html#emptyarraylike" class="tsd-signature-type">EmptyArrayLike</a><span class="tsd-signature-symbol"> | </span><a href="globals.html#emptyplainobject" class="tsd-signature-type">EmptyPlainObject</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/types.ts#L12">types.ts:12</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="emptyarraylike" class="tsd-anchor"></a>
+					<h3>Empty<wbr>Array<wbr>Like</h3>
+					<div class="tsd-signature tsd-kind-icon">Empty<wbr>Array<wbr>Like<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/types.ts#L5">types.ts:5</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">0</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-is-not-exported">
+					<a name="emptyplainobject" class="tsd-anchor"></a>
+					<h3>Empty<wbr>Plain<wbr>Object</h3>
+					<div class="tsd-signature tsd-kind-icon">Empty<wbr>Plain<wbr>Object<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/types.ts#L9">types.ts:9</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>index: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">never</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="falseyprimitive" class="tsd-anchor"></a>
+					<h3>Falsey<wbr>Primitive</h3>
+					<div class="tsd-signature tsd-kind-icon">Falsey<wbr>Primitive<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/types.ts#L2">types.ts:2</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="objectlike" class="tsd-anchor"></a>
+					<h3>Object<wbr>Like</h3>
+					<div class="tsd-signature tsd-kind-icon">Object<wbr>Like<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/types.ts#L4">types.ts:4</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="plainobject" class="tsd-anchor"></a>
+					<h3>Plain<wbr>Object</h3>
+					<div class="tsd-signature tsd-kind-icon">Plain<wbr>Object<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/types.ts#L8">types.ts:8</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>name: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="primitive" class="tsd-anchor"></a>
+					<h3>Primitive</h3>
+					<div class="tsd-signature tsd-kind-icon">Primitive<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/types.ts#L3">types.ts:3</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-is-not-exported">
 					<a name="typecondition" class="tsd-anchor"></a>
 					<h3>Type<wbr>Condition</h3>
 					<div class="tsd-signature tsd-kind-icon">Type<wbr>Condition<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Constructor</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/is.ts#L18">is.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/is.ts#L18">is.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -130,6 +233,16 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="typedarray" class="tsd-anchor"></a>
+					<h3>Typed<wbr>Array</h3>
+					<div class="tsd-signature tsd-kind-icon">Typed<wbr>Array<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Int8Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Int16Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint16Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint32Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint8ClampedArray</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/types.ts#L1">types.ts:1</a></li>
+						</ul>
+					</aside>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
@@ -144,7 +257,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/is.ts#L44">is.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/is.ts#L44">is.ts:44</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -179,7 +292,7 @@ is($h1, /Element/) <span class="hljs-comment">// =&gt; true</span></code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/is.ts#L54">is.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/is.ts#L54">is.ts:54</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -208,13 +321,14 @@ is($h1, /Element/) <span class="hljs-comment">// =&gt; true</span></code></pre>
 					<a name="isarray" class="tsd-anchor"></a>
 					<h3>is<wbr>Array</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Array<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, loose<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Array<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Array<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, loose<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/array.ts#L13">array.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/array.ts#L13">array.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -228,9 +342,30 @@ isArray({ <span class="hljs-number">0</span>: <span class="hljs-number">1</span>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>target: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/array.ts#L19">array.ts:19</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>you can provide secound params to check target if arraylike</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">any</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> loose: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
+									<h5>loose: <span class="tsd-signature-type">boolean</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>return true if target likes an array</p>
 									</div>
@@ -250,7 +385,7 @@ isArray({ <span class="hljs-number">0</span>: <span class="hljs-number">1</span>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/array.ts#L52">array.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/array.ts#L59">array.ts:59</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -274,6 +409,36 @@ isArrayLike({ <span class="hljs-number">0</span>:<span class="hljs-number">1</sp
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="iscloneble" class="tsd-anchor"></a>
+					<h3>is<wbr>Cloneble</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Cloneble<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/object.ts#L49">object.ts:49</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>detemine if target can be cloned, for example: jQuery Object</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="isdec" class="tsd-anchor"></a>
 					<h3>is<wbr>Dec</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -283,7 +448,7 @@ isArrayLike({ <span class="hljs-number">0</span>:<span class="hljs-number">1</sp
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/number.ts#L62">number.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/number.ts#L62">number.ts:62</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -316,7 +481,7 @@ isDec(<span class="hljs-number">1.1</span>) <span class="hljs-comment">// =&gt; 
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/empty.ts#L27">empty.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/empty.ts#L28">empty.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -358,7 +523,7 @@ isEmpty(<span class="hljs-string">''</span>) =&gt; <span class="hljs-literal">tr
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/eq.ts#L16">eq.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/eq.ts#L16">eq.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -395,7 +560,7 @@ isEqual(<span class="hljs-number">1</span>, <span class="hljs-string">'1'</span>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/object.ts#L40">object.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/object.ts#L41">object.ts:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -425,7 +590,7 @@ isEqual(<span class="hljs-number">1</span>, <span class="hljs-string">'1'</span>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/number.ts#L92">number.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/number.ts#L92">number.ts:92</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -462,7 +627,7 @@ isGt(<span class="hljs-string">'0'</span>, <span class="hljs-number">1</span>) <
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/number.ts#L75">number.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/number.ts#L75">number.ts:75</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -495,7 +660,7 @@ isInt(<span class="hljs-number">1.1</span>) <span class="hljs-comment">// =&gt; 
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/iterator.ts#L24">iterator.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/iterator.ts#L24">iterator.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -540,7 +705,7 @@ isIterable(map) <span class="hljs-comment">// =&gt; true</span>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/number.ts#L106">number.ts:106</a></li>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/number.ts#L106">number.ts:106</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -576,7 +741,7 @@ isLt(<span class="hljs-string">'0'</span>, <span class="hljs-number">1</span>) <
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/number.ts#L31">number.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/number.ts#L31">number.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -612,7 +777,7 @@ isNegative(<span class="hljs-number">0</span>) <span class="hljs-comment">// =&g
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/object.ts#L32">object.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/object.ts#L33">object.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -651,7 +816,7 @@ isObjectLike(<span class="hljs-function"><span class="hljs-keyword">function</sp
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/object.ts#L10">object.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/object.ts#L11">object.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -683,7 +848,7 @@ isPlainObject(<span class="hljs-keyword">new</span> <span class="hljs-built_in">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/number.ts#L49">number.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/number.ts#L49">number.ts:49</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -713,13 +878,13 @@ isPositive(<span class="hljs-number">0</span>) <span class="hljs-comment">// =&g
 					<a name="isprimitive" class="tsd-anchor"></a>
 					<h3>is<wbr>Primitive</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Primitive<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Primitive<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/primitive.ts#L29">primitive.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/primitive.ts#L30">primitive.ts:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -740,7 +905,7 @@ isPrimitive({}) <span class="hljs-comment">// =&gt; false</span>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Boolean</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -754,7 +919,7 @@ isPrimitive({}) <span class="hljs-comment">// =&gt; false</span>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/promise.ts#L21">promise.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/promise.ts#L21">promise.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -795,7 +960,7 @@ isPrimitive({}) <span class="hljs-comment">// =&gt; false</span>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/array.ts#L38">array.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/array.ts#L45">array.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -827,7 +992,7 @@ isTypedArray([]) <span class="hljs-comment">// =&gt; false</span></code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/number.ts#L12">number.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/number.ts#L12">number.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -861,7 +1026,7 @@ isValidNumber(<span class="hljs-string">'11'</span>) <span class="hljs-comment">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/185e69b/src/type.ts#L29">type.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/harvey-woo/is/blob/a05a4a0/src/type.ts#L29">type.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -915,8 +1080,32 @@ isValidNumber(<span class="hljs-string">'11'</span>) <span class="hljs-comment">
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#empty" class="tsd-kind-icon">Empty</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#emptyarraylike" class="tsd-kind-icon">Empty<wbr>Array<wbr>Like</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-not-exported">
+						<a href="globals.html#emptyplainobject" class="tsd-kind-icon">Empty<wbr>Plain<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#falseyprimitive" class="tsd-kind-icon">Falsey<wbr>Primitive</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#objectlike" class="tsd-kind-icon">Object<wbr>Like</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#plainobject" class="tsd-kind-icon">Plain<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#primitive" class="tsd-kind-icon">Primitive</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-is-not-exported">
 						<a href="globals.html#typecondition" class="tsd-kind-icon">Type<wbr>Condition</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#typedarray" class="tsd-kind-icon">Typed<wbr>Array</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#is" class="tsd-kind-icon">is</a>
@@ -926,6 +1115,9 @@ isValidNumber(<span class="hljs-string">'11'</span>) <span class="hljs-comment">
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#isarraylike" class="tsd-kind-icon">is<wbr>Array<wbr>Like</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#iscloneble" class="tsd-kind-icon">is<wbr>Cloneble</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#isdec" class="tsd-kind-icon">is<wbr>Dec</a>
