@@ -9,7 +9,7 @@ import is from './is'
  * ```
  * @param target 
  */
-export default function isValidNumber(target: any): target is number | Number {
+export default function isValidNumber(target: any): target is Number {
   return is(target, 'number') && !isNaN(target)
 }
 /**
